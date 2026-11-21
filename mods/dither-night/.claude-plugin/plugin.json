@@ -1,0 +1,10 @@
+{
+  "name": "dither-night",
+  "version": "0.1.0",
+  "description": "Dark theme with a dithered rainbow band behind the conversation (desktop and mobile apps).",
+  "author": {
+    "name": "foxhsiao"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/foxhsiao/dither-night"
+}

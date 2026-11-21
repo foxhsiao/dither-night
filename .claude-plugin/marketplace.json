@@ -1,0 +1,8 @@
+{
+  "name": "dither-night",
+  "owner": { "name": "foxhsiao" },
+  "description": "深黑介面配點陣抖動彩虹光帶背景。",
+  "plugins": [
+    { "name": "dither-night", "source": "./mods/dither-night", "description": "深黑介面配點陣抖動彩虹光帶背景" }
+  ]
+}
