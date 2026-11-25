@@ -1,6 +1,6 @@
 # dither-night
 
-A dark theme mod for Claude Code. Surfaces go near-black, and behind the conversation a diagonal rainbow band (blue, cream, orange, red) is drawn through a halftone dot mask, so it looks dithered. The band drifts slowly.
+A dark theme mod for Claude Code. Surfaces go near-black, and behind the conversation a diagonal rainbow band (blue, cream, orange, red) is drawn through a halftone dot mask, so it looks dithered. The band drifts slowly; when the system asks for reduced motion, it stays still.
 
 深黑色的 Claude Code 主題 mod：面板接近純黑，背景是一條用點陣遮罩畫出抖動質感的對角彩虹光帶，會緩慢漂移。
 

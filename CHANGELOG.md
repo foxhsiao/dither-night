@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2 (2026-11-25)
+
+- The band stops when the system asks for reduced motion. The scene's CSS has a `@media (prefers-reduced-motion: reduce)` rule that turns off both the drift and the glow pulse. The band then stays centered at its resting glow.
+- README: says the band stays still under reduced motion again, now that something makes it true.
+
 ## 0.1.1 (2026-11-25)
 
 - The terminal no longer shows `⚠ dither-night: no attached desktop or mobile client draws themes yet; …` under the prompt. In the CLI no desktop or mobile client is attached, so this line showed on every start and took a row of height.
