@@ -27,6 +27,27 @@ Answer `y` to add the marketplace, then pick a scope (user applies it to every s
 
 It is a dark-only look: it sets the dark palette and asks the app to draw in dark mode.
 
+### No warning in the terminal
+
+In the terminal, no desktop or mobile client is attached, so the theme is set but nothing draws it. Since 0.1.1 the mod says nothing about this on screen. Before, every start showed this line under the prompt:
+
+```
+⚠ dither-night: no attached desktop or mobile client draws themes yet; the theme stands and draws when one attaches
+```
+
+The reason now goes to the debug log only. To see it, start a session with a debug file and search it:
+
+```bash
+claude --debug-file /tmp/claude-debug.txt
+grep dither-night /tmp/claude-debug.txt
+```
+
+It shows up as `[dither-night] $.ui.log (to debug): no attached desktop or mobile client draws themes yet; …`.
+
+The "Desktop won't paint" toast still appears on screen. It only fires when the palette itself has a problem.
+
+終端機裡沒有桌面或手機 app 連上，主題設好了但不會畫出來。從 0.1.1 起不再在畫面上顯示那行警告，原因改寫進 debug 紀錄（用 `claude --debug-file` 開就看得到）。
+
 ## Change the look
 
 Everything lives in `mods/dither-night/hooks/register.tsx`:
