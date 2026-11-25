@@ -83,7 +83,7 @@ export const register: Register = on => {
     }
     const set = await $.theme.set(LOOK)
     if (!set.isDrawn) {
-      $.ui.status(set.reason)
+      $.ui.log(set.reason, { to: 'debug' })
     }
     return next(e)
   })
