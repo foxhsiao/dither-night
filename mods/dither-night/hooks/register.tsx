@@ -29,6 +29,7 @@ const SCENE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" p
 @keyframes drift { from { transform: translate(-40px, 20px); } to { transform: translate(40px, -20px); } }
 .glow { animation: pulse 18s ease-in-out infinite alternate; opacity: 0.9; }
 @keyframes pulse { from { opacity: 0.75; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .drift, .glow { animation: none; } }
 </style>
 <defs>
 <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
